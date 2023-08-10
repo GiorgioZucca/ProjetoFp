@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import styles from './LoginForm.module.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const LoginForm = () => {
+  const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
     username: '',
     password: ''
@@ -16,10 +18,20 @@ const LoginForm = () => {
     });
   };
 
+const isEmployee = (emailAdress) => {
+    return emailAdress.endsWith('@jj.com');
+};
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log('Submitted credentials:', credentials);
     // Implement authentication logic here
+
+    if (isEmployee(credentials.username)) {
+        navigate("/task");
+    } else {
+        navigate("/portal")
+    }
   };
 
   return (
@@ -28,7 +40,7 @@ const LoginForm = () => {
         <h2 className={styles.fheader}>Entrar</h2>
         <form onSubmit={handleSubmit}>
             <div className={styles.ffield}>
-            <label className={styles.flabel}>E-mail ou nome de usuário:</label>
+            <label className={styles.flabel}>E-mail:</label>
             <input
                 type="text"
                 name="username"
@@ -48,9 +60,6 @@ const LoginForm = () => {
             />
             </div>
             <button type="submit" className={styles.fbutton}>Entrar</button>
-            <Link to="/portal" className={styles.portalpersonalLink}>portal</Link>
-            <Link to="/task" className={styles.portalpersonalLinkLink}>Taszera</Link>
-
             <div className={styles.signupPrompt}>
                 Não possui uma conta? 
                 <Link to="/signup" className={styles.signupLink}>Criar uma conta</Link>
