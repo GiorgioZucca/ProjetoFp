@@ -6,6 +6,7 @@ import LoginForm from './components/pages/LoginForm'
 import SignUp from './components/pages/SignUp'
 import Personal from './components/pages/Personal'
 import Portal from './components/pages/Portal'
+import Agendamento from './components/pages/Agendamento'
  
 import './App.css';
 import Navbar from './components/layout/Navbar'
@@ -35,6 +36,7 @@ function App() {
         <Route path='/signup' element={<SignUp />}></Route>
         <Route path='/personal' element={<Personal />}></Route>
         <Route path='/portal' element={<Portal userFullName={userFullName} appointments={appointments} />}></Route>
+        <Route path='/agendamento' element={<Agendamento />}></Route>
       </Routes>
     </Router>
   );
