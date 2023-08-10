@@ -4,6 +4,7 @@ import Procd from './components/pages/Procd'
 import About from './components/pages/About'
 import LoginForm from './components/pages/LoginForm'
 import SignUp from './components/pages/SignUp'
+import Personal from './components/pages/Personal'
  
 import './App.css';
 import Navbar from './components/layout/Navbar'
@@ -18,6 +19,7 @@ function App() {
         <Route path='/about' element={<About />}> </Route>
         <Route path='/cadastro' element={<LoginForm />}></Route>
         <Route path='/signup' element={<SignUp />}></Route>
+        <Route path='/personal' element={<Personal />}></Route>
       </Routes>
     </Router>
   );

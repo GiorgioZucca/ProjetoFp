@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './SignUp.module.css';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   const [userInfo, setUserInfo] = useState({
@@ -70,6 +71,7 @@ const SignUp = () => {
             />
           </div>
           <button type="submit" className={styles.sbutton}>Criar conta</button>
+          <Link to="/personal" className={styles.personalLink}>Criar uma conta</Link>
         </form>
       </div>
     </>
