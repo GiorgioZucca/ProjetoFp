@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Personal.module.css';
+import { Link } from 'react-router-dom';
 
 const Personal = () => {
   const [info, setInfo] = useState({
@@ -112,6 +113,7 @@ const Personal = () => {
           </div>
 
           <button type="submit" className={styles.pbutton}>Atualizar dados</button>
+          <Link to="/portal" className={styles.portalpersonalLink}>Portal</Link>
         </form>
       </div>
     </>

@@ -1,0 +1,68 @@
+.portalpageBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1552083375-1447ce886485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .portalcontainer {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portalheader {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .portalappointments {
+    margin-top: 20px;
+  }
+  
+  .portalappointment {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .portalappointment h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .portalappointment p {
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+
+  .portalpersonalPrompt {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .portalpersonalLink {
+    color: #370d73;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.3s;
+  }
+  
+  .portalpersonalLink:hover {
+    color: #370d73;
+  }
