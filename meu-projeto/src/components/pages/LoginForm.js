@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './LoginForm.module.css';
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
   const [credentials, setCredentials] = useState({
@@ -47,6 +48,11 @@ const LoginForm = () => {
             />
             </div>
             <button type="submit" className={styles.fbutton}>Entrar</button>
+
+            <div className={styles.signupPrompt}>
+                Não possui uma conta? 
+                <Link to="/signup" className={styles.signupLink}>Criar uma conta</Link>
+            </div>
         </form>
         </div>
     </div>

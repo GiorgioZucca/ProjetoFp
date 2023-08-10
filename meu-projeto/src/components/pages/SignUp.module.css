@@ -1,6 +1,7 @@
-/* src/components/LoginForm.module.css */
-.fcontainer {
-    width: 320px;
+/* src/components/SignUpForm.module.css */
+
+.scontainer {
+    width: 350px;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
@@ -8,33 +9,33 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* centers the form */
+    transform: translate(-50%, -50%);
   }
   
-  .fpageBackground {
+  .spageBackground {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url('https://plus.unsplash.com/premium_photo-1675826774815-35b8a48ddc2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80'); /* Adjust the path if it's different */
+    background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; /* Ensure it's below the content */
+    z-index: -1;
   }
   
-  .fheader {
+  .sheader {
     text-align: center;
     color: #333;
     margin-bottom: 25px;
   }
   
-  .ffield {
+  .sfield {
     margin-bottom: 15px;
   }
   
-  .flabel {
+  .slabel {
     display: block;
     font-weight: bold;
     margin-bottom: 8px;
@@ -42,7 +43,7 @@
     color: #555;
   }
   
-  .finput {
+  .sinput {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #ddd;
@@ -52,12 +53,12 @@
     transition: border 0.3s;
   }
   
-  .finput:focus {
+  .sinput:focus {
     outline: none;
     border-color: #370d73;
   }
   
-  .fbutton {
+  .sbutton {
     width: 100%;
     padding: 12px;
     background-color: #370d73;
@@ -69,25 +70,6 @@
     transition: background-color 0.3s;
   }
   
-  .fbutton:hover {
+  .sbutton:hover {
     background-color: #b7add9;
-  }
-
-  .signupPrompt {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 0.9em;
-    color: #555;
-  }
-  
-  .signupLink {
-    color: #370d73;
-    cursor: pointer;
-    text-decoration: none;
-    margin-left: 5px;
-    transition: color 0.3s;
-  }
-  
-  .signupLink:hover {
-    color: #370d73;
   }
