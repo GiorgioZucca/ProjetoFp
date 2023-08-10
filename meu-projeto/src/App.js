@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Landing from './components/pages/Landing'
 import Procd from './components/pages/Procd'
 import About from './components/pages/About'
-import Cadastro from './components/pages/Cadastro'
+import Cadastro from './components/pages/LoginForm'
  
 import './App.css';
 import Navbar from './components/layout/Navbar'
