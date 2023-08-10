@@ -14,17 +14,17 @@ const Portal = ({ userFullName, appointments }) => {
           {appointments && appointments.length > 0 ? (
             appointments.map((appointment, index) => (
               <div key={index} className={styles.portalappointment}>
-                <h3>Appointment {index + 1}</h3>
-                <p><strong>Service:</strong> {appointment.service}</p>
-                <p><strong>Equipment:</strong> {appointment.equipment}</p>
-                <p><strong>Doctor:</strong> {appointment.doctor}</p>
-                <p><strong>Date:</strong> {appointment.date}</p>
-                <p><strong>Hour:</strong> {appointment.hour}</p>
-                <p><strong>Additional Info:</strong> {appointment.additionalInfo}</p>
+                <h3>Agendamento {index + 1}</h3>
+                <p><strong>Procedimento:</strong> {appointment.service}</p>
+                <p><strong>Máquina:</strong> {appointment.equipment}</p>
+                <p><strong>Profissional:</strong> {appointment.doctor}</p>
+                <p><strong>Data:</strong> {appointment.date}</p>
+                <p><strong>Hora:</strong> {appointment.hour}</p>
+                <p><strong>Informações adicionais:</strong> {appointment.additionalInfo}</p>
               </div>
             ))
           ) : (
-            <p>You have no appointments scheduled.</p>
+            <p>Você não possui agendamentos.</p>
           )}
         </div>
         <Link to="/agendamento" className={styles.ppersonalLink}>Agendamento</Link>
