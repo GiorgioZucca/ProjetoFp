@@ -49,6 +49,7 @@ const LoginForm = () => {
             </div>
             <button type="submit" className={styles.fbutton}>Entrar</button>
             <Link to="/portal" className={styles.portalpersonalLink}>portal</Link>
+            <Link to="/task" className={styles.portalpersonalLinkLink}>Taszera</Link>
 
             <div className={styles.signupPrompt}>
                 Não possui uma conta? 

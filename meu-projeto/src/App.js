@@ -7,6 +7,7 @@ import SignUp from './components/pages/SignUp'
 import Personal from './components/pages/Personal'
 import Portal from './components/pages/Portal'
 import Agendamento from './components/pages/Agendamento'
+import Task from './components/pages/Task'
  
 import './App.css';
 import Navbar from './components/layout/Navbar'
@@ -24,6 +25,17 @@ function App() {
     },
     // ... add more appointments as needed
   ];
+  const tasks = [
+    {
+      patientFullName: "John Doe",
+      service: "Service 1",
+      date: "2023-09-20",
+      hour: "14:00",
+      additionalInfo: "None"
+    },
+    // ... add more tasks as needed
+  ];
+
   return (
     
     <Router>
@@ -37,6 +49,7 @@ function App() {
         <Route path='/personal' element={<Personal />}></Route>
         <Route path='/portal' element={<Portal userFullName={userFullName} appointments={appointments} />}></Route>
         <Route path='/agendamento' element={<Agendamento />}></Route>
+        <Route path='/task' element={<Task tasks={tasks}/> }></Route>
       </Routes>
     </Router>
   );
