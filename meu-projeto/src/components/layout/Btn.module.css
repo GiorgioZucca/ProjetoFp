@@ -1,0 +1,14 @@
+.btnFlat {
+    color: white;
+    font-size: 2vh;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: #370D73;
+    transition: background 0.3s ease;
+    font-family: Inter;
+  }
+  
+  .btnFlat:hover {
+    background: #4D04C4;
+    color: white;
+  }

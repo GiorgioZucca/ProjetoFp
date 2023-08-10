@@ -1,0 +1,45 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    padding: 0; /* Remove the original padding */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    width: 100%;
+    display: flex;
+    align-items: center; /* Vertically center content */
+  }
+  
+  .banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 6vh; /* Adjust the font size using vh unit */
+    font-weight: bold;
+    font-family: Inter;
+  }
+  
+  .banner p {
+    font-size: 3vh; /* Adjust the font size using vh unit */
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-family: Inter;
+  }
+  
+  .bannerContainer {
+    padding-left: 100px;
+  }
+  
+  .btnFlat {
+    color: white;
+    font-size: 2vh;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: #370D73;
+    transition: background 0.3s ease;
+    font-family: Inter;
+  }
+  
+  .btnFlat:hover {
+    background: #4D04C4;
+    color: white;
+  }

@@ -1,0 +1,38 @@
+.rectCont {
+    display: flex;
+    align-items: center; /* Vertically centers the contents */
+    padding: 50px 0; /* Top and bottom padding */
+  }
+  
+  .rectText {
+    flex: 1; /* Takes up half the space */
+    padding-right: 30px; /* Adds some space between the text and the image */
+    padding-left: 100px;
+  }
+  
+  .rectText h1 {
+    font-size: 2em;
+    margin-bottom: 20px; /* Spacing between the heading and paragraph */
+    font-family: Inter;
+  }
+  
+  .rectText p {
+    font-size: 1em;
+    font-family: Inter;
+  }
+  
+  .rectText a {
+    margin-top: 20px;
+    font-family: Inter;
+    margin-top: 20px;
+  }
+  
+  .rectImage {
+    flex: 1; /* Takes up half the space */
+  }
+  
+  .rectImage img {
+    width: 100%; /* Makes the image responsive */
+    height: auto;
+    display: block; /* Removes any space below the image */
+  }
