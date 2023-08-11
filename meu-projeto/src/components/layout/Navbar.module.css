@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #b7add9;
+}
+
+.logoContainer {
+    flex: 1;
+}
+
+.logo {
+    max-height: 40px;  /* Adjust based on your logo's size */
+    max-width: 100%;
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;  /* Adjust the gap between the links */
+    flex-grow: 1;  /* Allow the container to grow and take available space */
+    justify-content: center;  /* Center the links within their container */
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navLink:hover {
+    background-color: #555;
+}

@@ -39,11 +39,9 @@ function App() {
   return (
     
     <Router>
-      <Navbar local_sobrenos="about"/>
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Landing />}> </Route>
-        <Route path='/procedimentos' element={<Procd />}> </Route>
-        <Route path='/about' element={<About />}> </Route>
         <Route path='/cadastro' element={<LoginForm />}></Route>
         <Route path='/signup' element={<SignUp />}></Route>
         <Route path='/personal' element={<Personal />}></Route>

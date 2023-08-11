@@ -2,20 +2,16 @@ import { Link } from "react-router-dom"
 import styles from './Navbar.module.css'
 
 
-function Navbar(props){
-    const scroll = () => {
-        const element = document.getElementsByClassName('about')
-        console.log(element)
-        if (element) element[0].scrollIntoView()
-    };
-
+function Navbar(){
     return(
-        <nav>
-            <Link to="/">Ínicio</Link>
-            <Link to="/procedimentos">Procedimentos</Link>
-            <button onClick={scroll} >Sobre nós</button>
-            <Link to="/cadastro">Cadastre-se</Link>
-
+        <nav className={styles.navbar}>
+            <div className={styles.logoContainer}>
+                <img src="/path/to/your/logo.png" alt="Logo" className={styles.logo} />
+            </div>
+            <div className={styles.navLinks}>
+                <Link className={styles.navLink} to="/">Ínicio</Link>
+                <Link className={styles.navLink} to="/cadastro">Cadastre-se</Link>
+            </div>
         </nav>
     )
 }
