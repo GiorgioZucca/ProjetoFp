@@ -39,29 +39,19 @@ const Agendamento = () => {
               onChange={handleInputChange}
               className={styles.pinput}>
               {/* Replace with your specific options */}
-              <option value="service1">Procedimento 1</option>
-              <option value="service2">Procedimento 2</option>
-              <option value="service3">Procedimento 3</option>
-              <option value="service4">Procedimento 4</option>
-              <option value="service5">Procedimento 5</option>
+              <option value="service1">Drenagem</option>
+              <option value="service2">Limpeza de pele</option>
+              <option value="service3">Botox</option>
+              <option value="service4">Radiofrequência</option>
+              <option value="service5">Laser vermelho</option>
+              <option value="service5">Laser Infravermelho</option>
+              <option value="service5">Lipocavitação</option>
+              <option value="service5">Luz pulsada</option>
+              <option value="service5">Lavieen</option>
+              <option value="service5">Ultraformer</option>
             </select>
           </div>
 
-          <div className={styles.pfield}>
-            <label className={styles.plabel}>Máquina:</label>
-            <select 
-              name="equipment"
-              value={appointment.equipment}
-              onChange={handleInputChange}
-              className={styles.pinput}>
-              {/* Replace with your specific options */}
-              <option value="equipment1">Máquina 1</option>
-              <option value="equipment2">Máquina 2</option>
-              <option value="equipment3">Máquina 3</option>
-              <option value="equipment4">Máquina 4</option>
-              <option value="equipment5">Máquina 5</option>
-            </select>
-          </div>
 
           <div className={styles.pfield}>
             <label className={styles.plabel}>Profissional:</label>
@@ -71,11 +61,9 @@ const Agendamento = () => {
               onChange={handleInputChange}
               className={styles.pinput}>
               {/* Replace with your specific options */}
-              <option value="doctor1">Profissional 1</option>
-              <option value="doctor2">Profissional 2</option>
-              <option value="doctor3">Profissional 3</option>
-              <option value="doctor4">Profissional 4</option>
-              <option value="doctor5">Profissional 5</option>
+              <option value="doctor1">Esteticista - Dra. Amanda</option>
+              <option value="doctor2">Dermatologista - Dra. Isabel</option>
+              <option value="doctor3">Nutricionista - Dra. Beatriz</option>
             </select>
           </div>
 

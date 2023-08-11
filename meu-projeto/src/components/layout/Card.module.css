@@ -24,6 +24,13 @@
     grid-gap: 16px;
   }
   
+  .cardsT {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    padding-top: 20px;
+    font-family: Inter;
+  }
   
   @media (min-width: 100px) and (max-width: 575px) {
     .cards {

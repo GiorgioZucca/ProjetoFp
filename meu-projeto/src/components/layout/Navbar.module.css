@@ -6,20 +6,16 @@
     background-color: #b7add9;
 }
 
-.logoContainer {
-    flex: 1;
-}
+
 
 .logo {
-    max-height: 40px;  /* Adjust based on your logo's size */
+    max-height: 30px;  /* Adjust based on your logo's size */
     max-width: 100%;
 }
 
 .navLinks {
     display: flex;
     gap: 20px;  /* Adjust the gap between the links */
-    flex-grow: 1;  /* Allow the container to grow and take available space */
-    justify-content: center;  /* Center the links within their container */
 }
 
 .navLink {
@@ -31,5 +27,5 @@
 }
 
 .navLink:hover {
-    background-color: #555;
+    background-color: #370d73;
 }
