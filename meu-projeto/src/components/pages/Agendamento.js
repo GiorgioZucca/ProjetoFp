@@ -4,7 +4,6 @@ import styles from './Personal.module.css';
 const Agendamento = () => {
   const [appointment, setAppointment] = useState({
     service: '',
-    equipment: '',
     doctor: '',
     date: '',
     hour: '',

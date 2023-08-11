@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import styles from './Personal.module.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Personal = () => {
+  const navigate = useNavigate();
   const [info, setInfo] = useState({
     fullname: '',
     age: '',
@@ -12,6 +14,8 @@ const Personal = () => {
     allergy: '',
     additionalInfo: ''
   });
+
+  
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -24,6 +28,7 @@ const Personal = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log('Submitted personal info:', info);
+    navigate("/portal");
   };
 
   return (
@@ -113,7 +118,6 @@ const Personal = () => {
           </div>
 
           <button type="submit" className={styles.pbutton}>Atualizar dados</button>
-          <Link to="/portal" className={styles.portalpersonalLink}>Portal</Link>
         </form>
       </div>
     </>

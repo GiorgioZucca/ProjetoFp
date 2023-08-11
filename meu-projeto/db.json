@@ -16,6 +16,22 @@
       "email": "",
       "password": "",
       "id": 3
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "username": "tatiana",
+      "email": "tatiana@jj.com",
+      "password": "paris",
+      "id": 6
     }
   ]
 }

@@ -18,22 +18,21 @@ function App() {
   const userFullName = "John Doe";
   const appointments = [
     {
-      service: "Service 1",
-      equipment: "Equipment 2",
-      doctor: "Doctor 3",
+      service: "Botox",
+      doctor: "Dra. Amanda",
       date: "2023-09-20",
       hour: "14:00",
-      additionalInfo: "None"
+      additionalInfo: ""
     },
     // ... add more appointments as needed
   ];
   const tasks = [
     {
       patientFullName: "John Doe",
-      service: "Service 1",
+      service: "Botox",
       date: "2023-09-20",
       hour: "14:00",
-      additionalInfo: "None"
+      additionalInfo: ""
     },
     // ... add more tasks as needed
   ];

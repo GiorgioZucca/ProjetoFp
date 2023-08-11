@@ -27,7 +27,7 @@ const Portal = ({ userFullName, appointments }) => {
             <p>Você não possui agendamentos.</p>
           )}
         </div>
-        <Link to="/agendamento" className={styles.ppersonalLink}>Agendamento</Link>
+        <Link to="/agendamento" className={styles.ppersonalLink}>Novo agendamento</Link>
       </div>
     </>
   );
