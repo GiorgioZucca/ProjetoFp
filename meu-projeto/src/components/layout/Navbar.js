@@ -6,7 +6,7 @@ function Navbar(){
     return(
         <nav className={styles.navbar}>
             <div className={styles.logoContainer}>
-                <img src="/path/to/your/logo.png" alt="Logo" className={styles.logo} />
+                <img src="./images/MainLogo" alt="Logo" className={styles.logo} />
             </div>
             <div className={styles.navLinks}>
                 <Link className={styles.navLink} to="/">Ínicio</Link>
