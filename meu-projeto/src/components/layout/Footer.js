@@ -16,7 +16,7 @@ const Footer = () => {
                 </a>
             </div>
             <div className={styles.fooslogan}>
-                Loren ipskljaida dajmwdada dmk a
+                JJ Estética Jovem
             </div>
         </div>
     );

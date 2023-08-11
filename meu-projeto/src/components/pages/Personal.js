@@ -108,7 +108,7 @@ const Personal = () => {
               name="additionalInfo"
               value={info.additionalInfo}
               onChange={handleInputChange}
-              className={styles.ptextarea}
+              className={styles.pinput}
             ></textarea>
           </div>
 
