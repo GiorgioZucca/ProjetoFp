@@ -8,9 +8,11 @@ import Personal from './components/pages/Personal'
 import Portal from './components/pages/Portal'
 import Agendamento from './components/pages/Agendamento'
 import Task from './components/pages/Task'
+import 'font-awesome/css/font-awesome.min.css';
  
 import './App.css';
 import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
 
 function App() {
   const userFullName = "John Doe";
