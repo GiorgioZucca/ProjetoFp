@@ -22,15 +22,27 @@ const isEmployee = (emailAdress) => {
     return emailAdress.endsWith('@jj.com');
 };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     console.log('Submitted credentials:', credentials);
-    // Implement authentication logic here
-
-    if (isEmployee(credentials.username)) {
-        navigate("/task");
-    } else {
-        navigate("/portal")
+  
+    try {
+      const response = await fetch('http://localhost:5000/users');
+      const users = await response.json();
+  
+      const matchedUser = users.find(user => user.username === credentials.username && user.password === credentials.password);
+  
+      if (matchedUser) {
+        if (isEmployee(credentials.username)) {
+          navigate("/task");
+        } else {
+          navigate("/portal");
+        }
+      } else {
+        alert('Invalid email or password');
+      }
+    } catch (error) {
+      console.error('There was an error:', error);
     }
   };
 
@@ -40,7 +52,7 @@ const isEmployee = (emailAdress) => {
         <h2 className={styles.fheader}>Entrar</h2>
         <form onSubmit={handleSubmit}>
             <div className={styles.ffield}>
-            <label className={styles.flabel}>E-mail:</label>
+            <label className={styles.flabel}>Nome de usuário:</label>
             <input
                 type="text"
                 name="username"

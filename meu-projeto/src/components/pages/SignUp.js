@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import styles from './SignUp.module.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [userInfo, setUserInfo] = useState({
     fullname: '',
     email: '',
@@ -18,10 +20,42 @@ const SignUp = () => {
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log('Submitted user info:', userInfo);
-    // Implement sign-up logic here
+  
+    // Check if passwords match
+    if (userInfo.password !== userInfo.confirmPassword) {
+      alert("Passwords do not match!");
+      return;
+    }
+  
+    // Send data to JSON server
+    try {
+      const response = await fetch('http://localhost:5000/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          username: userInfo.username,
+          email: userInfo.email,
+          password: userInfo.password // Note: In a real-world application, never store plain-text passwords!
+        })
+      });
+  
+      if (response.ok) {
+        const data = await response.json();
+        console.log('User saved:', data);
+        
+        // Navigate to the /personal route after successful sign-up
+        navigate("/personal");
+        
+      } else {
+        console.error('Failed to save user.');
+      }
+    } catch (error) {
+      console.error('There was an error:', error);
+    }
   };
 
   return (
@@ -71,7 +105,6 @@ const SignUp = () => {
             />
           </div>
           <button type="submit" className={styles.sbutton}>Criar conta</button>
-          <Link to="/personal" className={styles.personalLink}>Criar uma conta</Link>
         </form>
       </div>
     </>

@@ -1,9 +1,16 @@
 {
-    "users": [],
-    "categories": [
-        {
-            "id": 1,
-            "name": "Infra"
-        }
-    ]
+  "users": [
+    {
+      "username": "passosgiorgio",
+      "email": "crazybo@gmail.com",
+      "password": "Iporanga1",
+      "id": 1
+    },
+    {
+      "username": "nandapaty",
+      "email": "mariagmelo@gmail.com",
+      "password": "2003",
+      "id": 2
+    }
+  ]
 }
